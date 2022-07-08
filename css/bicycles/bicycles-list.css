@@ -1,0 +1,93 @@
+.bicycles-list h2 {
+  font-size: 4rem;
+  line-height: 1.125;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicycles-list h2 span {
+  color: var(--color-p1);
+}
+
+.bicycles-list {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.bicycles-list ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bicycles-list li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.bicycles-list a {
+  display: block;
+}
+
+.bicycles-list img {
+  margin-bottom: 16px;
+}
+
+.bicycles-name {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bicycles-name::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--color-p1);
+  transition: width 0.2s;
+}
+
+.bicycles-list a:hover .bicycles-name::before {
+  width: 24px;
+}
+
+.bicycles-list li span {
+  padding-left: 20px;
+}
+
+.prices {
+  font-size: 1.125rem;
+  line-height: 1.135;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: var(--color-8);
+}
+
+@media (max-width: 800px) {
+  .bicycles-list {
+    padding-bottom: 60px;
+  }
+  .bicycles-list ul {
+    gap: 20px;
+  }
+}
