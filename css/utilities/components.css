@@ -8,12 +8,22 @@
   color: var(--color-p5);
   font-size: 1.125rem;
   line-height: 1.33;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
+  max-width: max-content;
 }
 
 .button:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.button.secundary {
+  background: var(--color-10);
+  color: var(--color-2);
+}
+
+.button.secundary:hover {
+  background: var(--color-9);
 }
 
 @media (max-width: 600px) {
