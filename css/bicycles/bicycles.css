@@ -1,0 +1,155 @@
+.bicycles {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicycles h2,
+.bicycles p {
+  grid-column: 1/-1;
+}
+
+.bicycles h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--color-p1);
+  margin-bottom: 8px;
+}
+
+.bicycles h2 {
+  margin-bottom: 20px;
+}
+
+.bicycles p {
+  margin-bottom: 32px;
+}
+
+.bicycles a {
+  place-self: end;
+}
+
+.bicycles ul {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-8);
+  display: grid;
+  gap: 16px;
+}
+
+.bicycles li {
+  display: flex;
+  align-items: center;
+}
+
+.bicycles-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bicycles-content h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.bicycles-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-8);
+}
+
+.bicycles-content img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.bicycles-image {
+  position: relative;
+}
+
+.bicycles-image span {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-0);
+
+  background: var(--color-11);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  border-radius: 4px 0 0 4px;
+}
+
+.dark ul {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-5);
+}
+
+.dark h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-0);
+}
+
+.dark p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-5);
+}
+
+.bicycles-bg {
+  background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0%);
+}
+
+@media (max-width: 800px) {
+  .bicycles-bg {
+    background: var(--color-11);
+  }
+  .bicycles {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicycles-content {
+    grid-template-columns: 1fr;
+  }
+  .bicycles ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bicycles a {
+    place-self: start;
+  }
+}
